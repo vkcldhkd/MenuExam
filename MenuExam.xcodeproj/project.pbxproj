@@ -14,6 +14,8 @@
 		63B6B4BE217EBC4900D87543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B6B4BC217EBC4900D87543 /* LaunchScreen.storyboard */; };
 		63B6B4C9217EBC4900D87543 /* MenuExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B4C8217EBC4900D87543 /* MenuExamTests.swift */; };
 		63B6B4D4217EBC4900D87543 /* MenuExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B4D3217EBC4900D87543 /* MenuExamUITests.swift */; };
+		63B6B4E6217EC83F00D87543 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B4E5217EC83F00D87543 /* HeaderView.swift */; };
+		63B6B4E8217EC90100D87543 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B6B4E7217EC90100D87543 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		63B6B4CF217EBC4900D87543 /* MenuExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B6B4D3217EBC4900D87543 /* MenuExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuExamUITests.swift; sourceTree = "<group>"; };
 		63B6B4D5217EBC4900D87543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B6B4E5217EC83F00D87543 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		63B6B4E7217EC90100D87543 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		63B6B4B2217EBC4800D87543 /* MenuExam */ = {
 			isa = PBXGroup;
 			children = (
-				63B6B4B3217EBC4800D87543 /* AppDelegate.swift */,
-				63B6B4B5217EBC4800D87543 /* ViewController.swift */,
-				63B6B4B7217EBC4800D87543 /* Main.storyboard */,
-				63B6B4BA217EBC4900D87543 /* Assets.xcassets */,
-				63B6B4BC217EBC4900D87543 /* LaunchScreen.storyboard */,
-				63B6B4BF217EBC4900D87543 /* Info.plist */,
+				63B6B4E2217EBCF600D87543 /* View */,
+				63B6B4E1217EBCE900D87543 /* ViewController */,
+				63B6B4E3217EBD0300D87543 /* SupportingFiles */,
+				63B6B4E4217EBD0C00D87543 /* Storyboard */,
 			);
 			path = MenuExam;
 			sourceTree = "<group>";
@@ -123,6 +125,42 @@
 				63B6B4D5217EBC4900D87543 /* Info.plist */,
 			);
 			path = MenuExamUITests;
+			sourceTree = "<group>";
+		};
+		63B6B4E1217EBCE900D87543 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B4B5217EBC4800D87543 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		63B6B4E2217EBCF600D87543 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B4E5217EC83F00D87543 /* HeaderView.swift */,
+				63B6B4E7217EC90100D87543 /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63B6B4E3217EBD0300D87543 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B4B3217EBC4800D87543 /* AppDelegate.swift */,
+				63B6B4BA217EBC4900D87543 /* Assets.xcassets */,
+				63B6B4BF217EBC4900D87543 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		63B6B4E4217EBD0C00D87543 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				63B6B4BC217EBC4900D87543 /* LaunchScreen.storyboard */,
+				63B6B4B7217EBC4800D87543 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				63B6B4B6217EBC4800D87543 /* ViewController.swift in Sources */,
+				63B6B4E6217EC83F00D87543 /* HeaderView.swift in Sources */,
+				63B6B4E8217EC90100D87543 /* CollectionViewCell.swift in Sources */,
 				63B6B4B4217EBC4800D87543 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCKPWMMJ4T;
-				INFOPLIST_FILE = MenuExam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MenuExam/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCKPWMMJ4T;
-				INFOPLIST_FILE = MenuExam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MenuExam/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
